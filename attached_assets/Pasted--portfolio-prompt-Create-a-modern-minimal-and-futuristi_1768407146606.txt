@@ -1,0 +1,113 @@
+<portfolio_prompt>
+
+Create a modern, minimal, and futuristic cybersecurity student portfolio website for **Ashwin Nethan**, a BTech Computer Science & Cybersecurity student and aspiring Cybersecurity Analyst based in Mangaluru, Karnataka, India.
+
+The website should follow a **dark theme** using **Black / Navy backgrounds with Neon Blue accents**, giving a **cybersecurity / hacker aesthetic** while still maintaining a **professional corporate look** suitable for internships, SOC roles, and academic opportunities. The design should feel **clean, minimal, futuristic, and tech-focused**, not flashy.
+
+--------------------------------
+INTRODUCTION / HERO SECTION
+--------------------------------
+Start with a short professional introduction:
+
+“A motivated cybersecurity student passionate about ethical hacking, network defense, and system security. Actively building hands-on experience through labs, cybersecurity platforms, and continuous learning, with a strong interest in internships, SOC roles, and real-world security projects.”
+
+Include:
+- Full Name: Ashwin Nethan
+- Title: Cybersecurity Student | Aspiring Cybersecurity Analyst
+- Location: Mangaluru, Karnataka, India
+- A professional profile image placeholder
+- A subtle animated cyber grid, terminal cursor, or neon line effect in the background
+
+--------------------------------
+WEBSITE STRUCTURE & SECTIONS
+--------------------------------
+
+1. HOME
+- Short hero introduction
+- Call-to-action buttons:
+  - “View Skills”
+  - “View Experience”
+  - “Contact Me”
+- Minimal animated elements (typing effect, blinking cursor, subtle glow)
+
+2. ABOUT ME
+Include:
+- Brief personal bio explaining passion for cybersecurity, ethical hacking, and network security
+- Mention active learning through labs, platforms, and self-practice
+- Highlight openness to mentorship, collaboration, and internships
+- Use icons or cards for clarity
+
+3. EDUCATION
+Display in a clean timeline or card layout:
+- Bachelor of Technology (BTech) – Computer Science & Engineering / Cybersecurity  
+  Kalvium & Yenepoya University (August 2025 – August 2029)
+- Higher Secondary Education – Computer Science  
+  Sri Chaitanya College of Education (June 2023 – April 2025)
+
+4. EXPERIENCE
+Section title: “Experience & Learning Journey”
+
+Include:
+- Role: Cybersecurity Student | Aspiring Cybersecurity Analyst
+- Type: Self-Learning
+- Duration: August 2025 – Present
+- Bullet points:
+  - Learning network security and ethical hacking fundamentals
+  - Hands-on labs using TryHackMe and Hack The Box
+  - Building strong foundations in Linux, networking, and cyber hygiene
+  - Exploring SIEM tools and incident response basics
+
+5. SKILLS
+Display using icons, progress bars, or skill cards:
+- Network Security
+- Ethical Hacking (Basics)
+- Linux & Command Line
+- Vulnerability Scanning
+- Web Application Security
+- Cyber Hygiene & Threat Awareness
+- Leadership
+- Campus Outreach
+- Design Thinking
+
+6. PROJECTS / PRACTICAL LABS
+Title: “Hands-on Labs & Learning Projects”
+
+Include cards for:
+- TryHackMe Labs – Practical cybersecurity exercises and challenges
+- Hack The Box Labs – Offensive and defensive security practice
+- SIEM & Incident Response Exploration – Learning detection and response fundamentals
+
+Mention that these represent **practical learning projects and real skill development**, even if they are not commercial projects.
+
+7. CERTIFICATIONS
+List cleanly with badges or icons:
+- Campus Ambassador
+- Enterprise Design Thinking Practitioner
+- Gemini Certification for Students (K12)
+- Google AI for K12 Educators
+
+8. CONTACT
+Include:
+- Email: ashwinnethan07@gmail.com
+- LinkedIn: www.linkedin.com/in/ashwin-nethan-a59259366
+- Location: Mangaluru, Karnataka, India
+- Simple contact form with minimal fields
+
+--------------------------------
+DESIGN & UI GUIDELINES
+--------------------------------
+- Dark theme (Black / Navy)
+- Neon Blue highlights for buttons, headings, and borders
+- Minimal fonts (sans-serif, modern tech font)
+- Subtle hover animations
+- Clean spacing and grid layout
+- Futuristic but professional (avoid clutter or excessive effects)
+- Mobile-responsive design
+
+--------------------------------
+OVERALL TONE
+--------------------------------
+Professional, confident, learner-focused, and future-ready.
+The website should clearly communicate that Ashwin Nethan is a **serious cybersecurity student with hands-on practice**, ready for internships, beginner SOC roles, and real-world exposure.
+
+</portfolio_prompt>
