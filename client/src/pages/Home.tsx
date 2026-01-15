@@ -4,7 +4,8 @@ import { Link as ScrollLink } from "react-scroll";
 import { useForm } from "react-hook-form";
 import { zodResolver } from "@hookform/resolvers/zod";
 import { insertMessageSchema } from "@shared/schema";
-import { useSubmitContact } from "@/hooks/use-contact";
+import emailjs from "@emailjs/browser";
+import { useToast } from "@/hooks/use-toast";
 import { Form, FormControl, FormField, FormItem, FormLabel, FormMessage } from "@/components/ui/form";
 import { Input } from "@/components/ui/input";
 import { Textarea } from "@/components/ui/textarea";
@@ -19,7 +20,8 @@ import { Accordion, AccordionItem, AccordionTrigger, AccordionContent } from "@/
 import { Dialog, DialogContent } from "@/components/ui/dialog";
 
 export default function Home() {
-  const contactMutation = useSubmitContact();
+  const { toast } = useToast();
+  const [isSubmitting, setIsSubmitting] = useState(false);
 
   const statusLabels = [
     { id: 'status', name: 'System Status: ONLINE', color: '#22c55e', animate: true },
@@ -36,8 +38,36 @@ export default function Home() {
   });
 
   const onSubmit = (data: any) => {
-    contactMutation.mutate(data, {
-      onSuccess: () => form.reset(),
+    setIsSubmitting(true);
+    
+    emailjs.send(
+      'service_x08b4vh',
+      'template_gr3m1qe',
+      {
+        from_name: data.name,
+        from_email: data.email,
+        message: data.message,
+        to_name: "Ashwin",
+      },
+      'dhbIsX5kyNPUd1xWb'
+    )
+    .then(() => {
+      toast({
+        title: "Transmission Received",
+        description: "Your message has been securely sent. I'll get back to you soon.",
+      });
+      form.reset();
+    })
+    .catch((error) => {
+      console.error('EmailJS Error:', error);
+      toast({
+        title: "Transmission Failed",
+        description: "There was an error sending your message. Please try again later.",
+        variant: "destructive",
+      });
+    })
+    .finally(() => {
+      setIsSubmitting(false);
     });
   };
 
