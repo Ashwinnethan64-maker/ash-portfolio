@@ -328,9 +328,14 @@ export default function Home() {
                 <p className="text-muted-foreground text-sm mb-4 flex-1">
                   Completed various learning paths focusing on web exploitation, network services, and privilege escalation techniques.
                 </p>
-                <Link href="#" className="text-primary text-sm hover:underline font-mono inline-flex items-center gap-1">
-                  View Profile <span className="text-xs">➜</span>
-                </Link>
+                <a 
+                  href="https://tryhackme.com/p/AshwinNethan" 
+                  target="_blank" 
+                  rel="noopener noreferrer"
+                  className="text-primary text-sm hover:text-cyan-400 font-mono inline-flex items-center gap-1 group/link transition-all duration-300 hover:drop-shadow-[0_0_8px_rgba(0,243,255,0.8)]"
+                >
+                  View Profile <span className="text-xs transition-transform duration-300 group-hover/link:translate-x-1">➜</span>
+                </a>
               </div>
             </div>
 
@@ -347,9 +352,14 @@ export default function Home() {
                 <p className="text-muted-foreground text-sm mb-4 flex-1">
                   Active participation in retired machines to practice real-world penetration testing methodologies in a controlled environment.
                 </p>
-                <Link href="#" className="text-primary text-sm hover:underline font-mono inline-flex items-center gap-1">
-                  View Profile <span className="text-xs">➜</span>
-                </Link>
+                <a 
+                  href="https://app.hackthebox.com/profile/AshwinNethan" 
+                  target="_blank" 
+                  rel="noopener noreferrer"
+                  className="text-primary text-sm hover:text-cyan-400 font-mono inline-flex items-center gap-1 group/link transition-all duration-300 hover:drop-shadow-[0_0_8px_rgba(0,243,255,0.8)]"
+                >
+                  View Profile <span className="text-xs transition-transform duration-300 group-hover/link:translate-x-1">➜</span>
+                </a>
               </div>
             </div>
 
@@ -366,9 +376,14 @@ export default function Home() {
                 <p className="text-muted-foreground text-sm mb-4 flex-1">
                   Setting up and configuring Splunk and ELK stack to ingest logs and create dashboards for threat visualization.
                 </p>
-                <Link href="#" className="text-primary text-sm hover:underline font-mono inline-flex items-center gap-1">
-                  View Demo <span className="text-xs">➜</span>
-                </Link>
+                <a 
+                  href="#" 
+                  target="_blank" 
+                  rel="noopener noreferrer"
+                  className="text-primary text-sm hover:text-cyan-400 font-mono inline-flex items-center gap-1 group/link transition-all duration-300 hover:drop-shadow-[0_0_8px_rgba(0,243,255,0.8)]"
+                >
+                  View Demo <span className="text-xs transition-transform duration-300 group-hover/link:translate-x-1">➜</span>
+                </a>
               </div>
             </div>
           </div>
