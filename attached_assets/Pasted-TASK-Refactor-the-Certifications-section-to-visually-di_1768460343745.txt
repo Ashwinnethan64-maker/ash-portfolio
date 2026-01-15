@@ -1,0 +1,118 @@
+TASK: Refactor the Certifications section to visually display my real certificates
+using a zoom parallax effect and clickable verification links.
+
+TECH STACK REQUIREMENTS:
+- shadcn/ui project structure
+- Tailwind CSS
+- TypeScript
+- React (App Router compatible)
+- framer-motion
+
+--------------------------------------------------
+PROJECT SETUP CHECK
+--------------------------------------------------
+1. Verify the project supports:
+   - TypeScript
+   - Tailwind CSS
+   - shadcn/ui
+
+2. If not configured:
+   - Provide instructions to initialize shadcn via CLI
+   - Ensure /components/ui directory exists
+   - Explain why /components/ui is required for reusable UI components
+
+--------------------------------------------------
+COMPONENT INTEGRATION (21st.dev)
+--------------------------------------------------
+Create the following file exactly:
+
+/components/ui/zoom-parallax.tsx
+
+Copy-paste the provided ZoomParallax component code into this file
+without modification.
+
+Install required dependency:
+npm install framer-motion
+
+--------------------------------------------------
+CERTIFICATIONS SECTION IMPLEMENTATION
+--------------------------------------------------
+Refactor the existing Certifications section as follows:
+
+1. Replace static certification cards with a scroll-based
+   Zoom Parallax layout using the ZoomParallax component.
+
+2. Each image in the parallax should represent a real certificate:
+   - Google AI for K12
+   - Enterprise Design Thinking (IBM)
+   - Gemini Certification
+   - Campus Ambassador
+
+3. Each certificate image should:
+   - Be clearly visible
+   - Maintain aspect ratio
+   - Have a subtle dark overlay
+   - Match the cybersecurity theme
+
+4. On hover:
+   - Slight neon cyan glow
+   - Cursor pointer
+   - Subtle scale effect
+
+--------------------------------------------------
+INTERACTION & LINKING
+--------------------------------------------------
+Make each certificate image clickable:
+
+- On click, open:
+  - Certificate verification link OR
+  - Google Drive / PDF / external credential URL
+- Open links in a new tab
+- Use rel="noopener noreferrer"
+
+--------------------------------------------------
+DATA & PROPS
+--------------------------------------------------
+Pass certificate data into ZoomParallax as props:
+
+Each object should include:
+- src (certificate image URL or local asset)
+- alt (certificate name)
+- href (verification or view link)
+
+Example structure:
+{
+  src: "/certificates/google-ai.png",
+  alt: "Google AI for K12",
+  href: "https://..."
+}
+
+--------------------------------------------------
+RESPONSIVE BEHAVIOR
+--------------------------------------------------
+- Desktop: Full parallax effect enabled
+- Mobile:
+  - Reduce scale intensity
+  - Ensure smooth scrolling
+  - No overflow or layout breaking
+
+--------------------------------------------------
+UI CONSISTENCY
+--------------------------------------------------
+Do NOT change:
+- Section title "<CERTIFICATIONS />"
+- Subtitle "// Validated credentials"
+- Global theme colors
+- Navbar or other sections
+
+Ensure:
+- Matches existing dark cyber aesthetic
+- Professional, recruiter-friendly
+- Performance optimized (no excessive re-renders)
+
+--------------------------------------------------
+ASSETS
+--------------------------------------------------
+If real certificate images are not yet provided:
+- Use valid Unsplash placeholder images
+- Leave TODO comments indicating where real certificate images should be replaced

@@ -13,6 +13,8 @@ import { SectionHeading } from "@/components/SectionHeading";
 import LabelBadge from "@/components/ui/label-badges";
 import { Shield, Cpu, Terminal as TerminalIcon, Award, GraduationCap, Briefcase, Mail, MapPin, Linkedin, Github, Globe, Search, BarChart } from "lucide-react";
 
+import { ZoomParallax } from "@/components/ui/zoom-parallax";
+
 export default function Home() {
   const contactMutation = useSubmitContact();
 
@@ -394,25 +396,33 @@ export default function Home() {
       <section className="py-24 relative">
         <div className="container mx-auto px-6">
           <SectionHeading title="Certifications" subtitle="Validated credentials" align="center" />
-          
-          <div className="grid grid-cols-2 md:grid-cols-4 gap-6">
-            {[
-              { title: "Google AI for K12", issuer: "Google" },
-              { title: "Enterprise Design Thinking", issuer: "IBM" },
-              { title: "Gemini Certification", issuer: "Google" },
-              { title: "Campus Ambassador", issuer: "Tech Corp" }
-            ].map((cert, index) => (
-              <motion.div 
-                key={index}
-                whileHover={{ y: -5 }}
-                className="bg-secondary/20 border border-primary/20 p-6 rounded-lg text-center hover:bg-secondary/40 hover:border-primary/50 transition-all cursor-default"
-              >
-                <Award className="w-10 h-10 text-primary mx-auto mb-4" />
-                <h4 className="font-bold text-white mb-1">{cert.title}</h4>
-                <p className="text-xs text-muted-foreground uppercase">{cert.issuer}</p>
-              </motion.div>
-            ))}
-          </div>
+        </div>
+        
+        <div className="mt-12 relative">
+          <ZoomParallax 
+            images={[
+              { 
+                src: "https://i.postimg.cc/6ptR3jX5/Screenshot-2026-01-15-122227.png", 
+                alt: "Google AI for K12",
+                href: "https://i.postimg.cc/6ptR3jX5/Screenshot-2026-01-15-122227.png"
+              },
+              { 
+                src: "https://i.postimg.cc/VLc0GG5W/Screenshot-2025-08-06-193320.png", 
+                alt: "Enterprise Design Thinking (IBM)",
+                href: "https://i.postimg.cc/VLc0GG5W/Screenshot-2025-08-06-193320.png"
+              },
+              { 
+                src: "https://i.postimg.cc/65954D89/Screenshot-2025-11-25-134905.png", 
+                alt: "Gemini Certification (Google)",
+                href: "https://i.postimg.cc/65954D89/Screenshot-2025-11-25-134905.png"
+              },
+              { 
+                src: "https://i.postimg.cc/sDDsg7Nk/Screenshot-2026-01-09-130845.png", 
+                alt: "Campus Ambassador (Tech Corp)",
+                href: "https://i.postimg.cc/sDDsg7Nk/Screenshot-2026-01-09-130845.png"
+              }
+            ]} 
+          />
         </div>
       </section>
 
