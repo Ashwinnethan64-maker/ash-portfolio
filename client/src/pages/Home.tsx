@@ -17,7 +17,7 @@ import { Shield, Cpu, Terminal as TerminalIcon, Award, GraduationCap, Briefcase,
 
 import { ImageAutoSlider } from "@/components/ui/image-auto-slider";
 import { Accordion, AccordionItem, AccordionTrigger, AccordionContent } from "@/components/ui/accordion";
-import { Dialog, DialogContent } from "@/components/ui/dialog";
+import { Dialog, DialogContent, DialogTitle, DialogDescription } from "@/components/ui/dialog";
 
 export default function Home() {
   const { toast } = useToast();
@@ -436,6 +436,8 @@ export default function Home() {
         <DialogContent className="max-w-2xl bg-background border-primary/30 p-0 overflow-hidden">
           {selectedProject && (
             <div className="relative">
+              <DialogTitle className="sr-only">{selectedProject.title}</DialogTitle>
+              <DialogDescription className="sr-only">{selectedProject.subtitle}</DialogDescription>
               <div className="h-64 bg-black relative">
                 <img 
                   src={selectedProject.image} 
