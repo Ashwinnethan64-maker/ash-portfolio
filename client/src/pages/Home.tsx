@@ -10,10 +10,16 @@ import { Textarea } from "@/components/ui/textarea";
 import { Terminal } from "@/components/Terminal";
 import { CyberButton } from "@/components/CyberButton";
 import { SectionHeading } from "@/components/SectionHeading";
-import { Shield, Cpu, Terminal as TerminalIcon, Award, GraduationCap, Briefcase, Mail, MapPin, Linkedin, Github } from "lucide-react";
+import LabelBadge from "@/components/ui/label-badges";
+import { Shield, Cpu, Terminal as TerminalIcon, Award, GraduationCap, Briefcase, Mail, MapPin, Linkedin, Github, Globe, Search, BarChart } from "lucide-react";
 
 export default function Home() {
   const contactMutation = useSubmitContact();
+
+  const statusLabels = [
+    { id: 'status', name: 'System Status: ONLINE', color: '#22c55e', animate: true },
+    { id: 'internship', name: 'Available for Internship', color: '#00f3ff' }
+  ];
   
   const form = useForm({
     resolver: zodResolver(insertMessageSchema),
@@ -89,9 +95,7 @@ export default function Home() {
             animate={{ opacity: 1, x: 0 }}
             transition={{ duration: 0.8 }}
           >
-            <div className="inline-block px-3 py-1 mb-4 border border-primary/30 rounded-full bg-primary/5 text-primary font-mono text-xs">
-              System Status: ONLINE
-            </div>
+            <LabelBadge labels={statusLabels} className="mb-6" />
             <h1 className="text-5xl md:text-7xl font-bold mb-6 leading-tight">
               Ashwin <span className="text-transparent bg-clip-text bg-gradient-to-r from-primary to-blue-600">Nethan</span>
             </h1>
@@ -508,8 +512,4 @@ export default function Home() {
   );
 }
 
-// Simple dummy components for icons not imported from Lucide to prevent errors if they don't exist
-function Globe(props: any) { return <div {...props}>🌐</div> }
-function Search(props: any) { return <div {...props}>🔍</div> }
-function BarChart(props: any) { return <div {...props}>📊</div> }
 import { Link } from "wouter";
