@@ -119,6 +119,7 @@ export default function Home() {
       subtitle: "Sustainable Agriculture & Supply Chain Security",
       desc: "An innovative platform focused on securing agricultural supply chains using blockchain and AI for threat detection.",
       image: "https://images.unsplash.com/photo-1523348837708-15d4a09cfac2?w=800&q=80",
+      url: "https://agronova-app.vercel.app/",
       proof: [
         "Implemented end-to-end encryption for farmer-to-consumer communication.",
         "Integrated AI models to detect anomalies in supply chain logistics.",
@@ -397,10 +398,21 @@ export default function Home() {
           
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
             {projects.map((project) => (
-              <div key={project.id} className="cyber-card group p-0 rounded-xl overflow-hidden h-full flex flex-col">
+              <motion.div
+                key={project.id}
+                whileHover={{ scale: 1.03 }}
+                className="cyber-card group p-0 rounded-xl overflow-hidden h-full flex flex-col cursor-pointer hover:border-primary/50 hover:shadow-[0_0_20px_rgba(0,243,255,0.2)] transition-all duration-300"
+                onClick={() => {
+                  if (project.url) {
+                    window.open(project.url, "_blank", "noopener,noreferrer");
+                  } else {
+                    setSelectedProject(project);
+                  }
+                }}
+              >
                 <div className="h-48 bg-black relative overflow-hidden">
                   <div 
-                    className="absolute inset-0 bg-cover bg-center opacity-50 group-hover:scale-110 transition-transform duration-700" 
+                    className="absolute inset-0 bg-cover bg-center opacity-50 group-hover:scale-110 group-hover:brightness-110 group-hover:contrast-110 transition-transform duration-700" 
                     style={{ backgroundImage: `url(${project.image})` }}
                   />
                   <div className="absolute inset-0 bg-gradient-to-t from-background to-transparent" />
@@ -416,16 +428,36 @@ export default function Home() {
                   <p className="text-muted-foreground text-sm mb-4 flex-1">
                     {project.desc}
                   </p>
-                  <CyberButton 
-                    size="sm" 
-                    variant="outline" 
-                    className="w-full"
-                    onClick={() => setSelectedProject(project)}
-                  >
-                    View Proof
-                  </CyberButton>
+                  <div className="flex gap-2">
+                    <CyberButton 
+                      size="sm" 
+                      variant="outline" 
+                      className="w-full group/btn"
+                      onClick={(e) => {
+                        e.stopPropagation();
+                        if (project.url) {
+                          window.open(project.url, "_blank", "noopener,noreferrer");
+                        } else {
+                          setSelectedProject(project);
+                        }
+                      }}
+                    >
+                      View Link <span className="ml-2 transition-transform duration-300 group-hover/btn:translate-x-1">→</span>
+                    </CyberButton>
+                    <CyberButton 
+                      size="sm" 
+                      variant="ghost" 
+                      className="w-auto px-3"
+                      onClick={(e) => {
+                        e.stopPropagation();
+                        setSelectedProject(project);
+                      }}
+                    >
+                      <Shield className="w-4 h-4" />
+                    </CyberButton>
+                  </div>
                 </div>
-              </div>
+              </motion.div>
             ))}
           </div>
         </div>
