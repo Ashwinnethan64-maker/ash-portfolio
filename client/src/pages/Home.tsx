@@ -528,12 +528,26 @@ export default function Home() {
                 </div>
 
                 <div className="flex gap-4 mt-8">
-                  <a href="#" className="w-10 h-10 rounded bg-secondary flex items-center justify-center text-white hover:bg-primary hover:text-black transition-colors">
-                    <Linkedin size={20} />
-                  </a>
-                  <a href="#" className="w-10 h-10 rounded bg-secondary flex items-center justify-center text-white hover:bg-primary hover:text-black transition-colors">
-                    <Github size={20} />
-                  </a>
+                  <motion.a 
+                    href="https://github.com/Ashwinnethan64-maker" 
+                    target="_blank" 
+                    rel="noopener noreferrer"
+                    whileHover={{ scale: 1.1 }}
+                    aria-label="GitHub Profile"
+                    className="w-12 h-12 rounded-lg bg-secondary/40 flex items-center justify-center text-primary border border-primary/30 hover:border-primary hover:shadow-[0_0_15px_rgba(0,243,255,0.4)] transition-all duration-300"
+                  >
+                    <Github size={24} />
+                  </motion.a>
+                  <motion.a 
+                    href="https://www.linkedin.com/in/ashwin-nethan-a59259366/" 
+                    target="_blank" 
+                    rel="noopener noreferrer"
+                    whileHover={{ scale: 1.1 }}
+                    aria-label="LinkedIn Profile"
+                    className="w-12 h-12 rounded-lg bg-secondary/40 flex items-center justify-center text-primary border border-primary/30 hover:border-primary hover:shadow-[0_0_15px_rgba(0,243,255,0.4)] transition-all duration-300"
+                  >
+                    <Linkedin size={24} />
+                  </motion.a>
                 </div>
               </div>
             </div>
