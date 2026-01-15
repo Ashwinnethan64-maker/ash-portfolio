@@ -512,8 +512,8 @@ export default function Home() {
                   ))}
                 </div>
                 <div className="mt-8 flex justify-end">
-                  <CyberButton onClick={() => setSelectedProject(null)}>
-                    Secure Session
+                  <CyberButton variant="outline" onClick={() => setSelectedProject(null)}>
+                    Close Terminal
                   </CyberButton>
                 </div>
               </div>
