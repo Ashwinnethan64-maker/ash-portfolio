@@ -41,6 +41,21 @@ export default function Home() {
     });
   };
 
+  const education = [
+    {
+      period: "2025 - 2029",
+      degree: "B.Tech in Computer Science & Cybersecurity",
+      institution: "Kalvium & Yenepoya University",
+      desc: "Specializing in advanced network defense, cryptography, and secure software development."
+    },
+    {
+      period: "2023 - 2025",
+      degree: "Higher Secondary Education",
+      institution: "Sri Chaitanya PU College",
+      desc: "Built a strong foundation in mathematics, physics, and computer science principles."
+    }
+  ];
+
   const skillCategories = [
     {
       title: "Security Operations",
@@ -97,6 +112,7 @@ export default function Home() {
           <div className="hidden md:flex gap-8">
             {[
               { name: "About", to: "about" },
+              { name: "Education", to: "education" },
               { name: "Experience", to: "experience" },
               { name: "Skills", to: "skills" },
               { name: "Projects", to: "projects" },
@@ -225,7 +241,7 @@ export default function Home() {
       </section>
 
       {/* Education Section */}
-      <section className="py-24 relative overflow-hidden">
+      <section id="education" className="py-24 relative overflow-hidden">
         <div className="absolute top-0 right-0 w-1/3 h-full bg-primary/5 blur-3xl rounded-full translate-x-1/2" />
         <div className="container mx-auto px-6 relative z-10">
           <SectionHeading title="Education" subtitle="Academic credentials loaded" />
