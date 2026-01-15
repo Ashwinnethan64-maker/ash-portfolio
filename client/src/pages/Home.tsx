@@ -148,7 +148,7 @@ export default function Home() {
               {/* Profile Image */}
               <div className="aspect-square rounded-2xl bg-secondary relative overflow-hidden border border-white/10 group-hover:border-primary/50 transition-colors duration-500">
                 <img 
-                  src="@assets/WhatsApp_Image_2025-11-23_at_17.49.21_647fa574_1768458660952.jpg" 
+                  src="https://i.postimg.cc/cJTSQJ2B/Whats-App-Image-2025-11-23-at-17-49-21-647fa574.jpg" 
                   alt="Ashwin Nethan" 
                   className="object-cover w-full h-full opacity-80 grayscale group-hover:grayscale-0 transition-all duration-500"
                 />
