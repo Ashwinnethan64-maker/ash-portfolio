@@ -218,7 +218,7 @@ export default function Home() {
                   </CyberButton>
                 </a>
                 <span className="text-[10px] font-mono text-muted-foreground mt-1 opacity-70 group-hover:opacity-100 transition-opacity">
-                  // Updated resume • PDF
+                  // PDF • Updated Resume
                 </span>
               </div>
             </div>
