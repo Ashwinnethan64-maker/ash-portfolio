@@ -203,23 +203,9 @@ export default function Home() {
               <CyberButton onClick={() => document.getElementById('skills')?.scrollIntoView({ behavior: 'smooth' })}>
                 View Skills
               </CyberButton>
-              <div className="flex flex-col items-center">
-                <div className="flex gap-2">
-                  <a 
-                    href="/assets/Ashwin_Nethan_Resume.pdf" 
-                    target="_blank"
-                    rel="noopener noreferrer"
-                  >
-                    <CyberButton variant="outline" className="gap-2 bg-primary/5 border-primary/40 hover:border-primary hover:shadow-[0_0_15px_rgba(0,243,255,0.4)] transition-all">
-                      <Download className="w-4 h-4" />
-                      Download Resume
-                    </CyberButton>
-                  </a>
-                </div>
-                <span className="text-[10px] font-mono text-muted-foreground mt-1 opacity-70">
-                  // PDF • Updated Resume
-                </span>
-              </div>
+              <CyberButton variant="outline" onClick={() => document.getElementById('experience')?.scrollIntoView({ behavior: 'smooth' })}>
+                Experience
+              </CyberButton>
             </div>
           </motion.div>
           
