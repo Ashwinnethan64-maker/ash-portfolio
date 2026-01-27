@@ -206,22 +206,13 @@ export default function Home() {
               <div className="flex flex-col items-center">
                 <div className="flex gap-2">
                   <a 
-                    href="https://drive.google.com/file/d/1GMkvN_DBkcA-KLTac5QizVaaDRlf60cj/view?usp=drive_link" 
-                    target="_blank" 
+                    href="/assets/Ashwin_Nethan_Resume.pdf" 
+                    target="_blank"
                     rel="noopener noreferrer"
                   >
                     <CyberButton variant="outline" className="gap-2 bg-primary/5 border-primary/40 hover:border-primary hover:shadow-[0_0_15px_rgba(0,243,255,0.4)] transition-all">
-                      <Globe className="w-4 h-4" />
-                      View Resume
-                    </CyberButton>
-                  </a>
-                  <a 
-                    href="/assets/Ashwin_Nethan_Resume.pdf" 
-                    download="Ashwin_Nethan_Resume.pdf"
-                  >
-                    <CyberButton variant="outline" className="gap-2 bg-primary/5 border-primary/40 hover:border-primary hover:shadow-[0_0_15px_rgba(0,243,255,0.4)] transition-all">
                       <Download className="w-4 h-4" />
-                      Download
+                      Download Resume
                     </CyberButton>
                   </a>
                 </div>
